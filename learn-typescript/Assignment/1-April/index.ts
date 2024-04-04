@@ -24,9 +24,10 @@ let num2 = 12;
 console.log(num1 / num2);
 
 //3. Swap the values of two variables without using a third variable.
+// Swap these values without using a new variable.
 let a = 1;
-let b = 2; // Swap these values without using a new variable.
-[a, b] = [b, a];
+let b = 2;
+[a, b] = [b, a]; //using array destructing assignment
 console.log("a =", a);
 console.log("b =", b);
 
@@ -74,16 +75,16 @@ let notGateC: boolean = !true; //(it inverts the values, true becomes false and 
 //8. Show examples of using compound assignment operators.
 let num = 10; // Use +=, -=, *=, and /= on this variable.
 num += 5;
-console.log(num);
+console.log(`Using addition assignment -= ${num}`);
 
 num -= 5;
-console.log(num);
+console.log(`Using subtraction assignment -= ${num}`);
 
 num *= 4;
-console.log(num);
+console.log(`Using multiplication assignment -= ${num}`);
 
 num /= 4;
-console.log(num);
+console.log(`Using division assignment -= ${num}`);
 
 //9. Write a program to check if a number is even or odd.
 let number = 47;
@@ -141,4 +142,45 @@ function findMaximum(
   return max;
 }
 const maximum = findMaximum();
-console.log(`${maximum}`);
+console.log(`The largest value is ${maximum}`);
+
+//13. Check if a given year is a leap year.
+
+let year = 2024;
+function isLeapYear(year: number): boolean {
+  let has29DaysInFebruary = new Date(year, 1, 29).getDate() === 29;
+  return has29DaysInFebruary;
+}
+let isLeap = isLeapYear(year);
+
+console.log(isLeapYear(year));
+
+//14. Write a program that converts temperature from Fahrenheit to Celsius.
+let fahrenheit: number = 90;
+function FahrenheitToCelsius(fahrenheit: number): number {
+  return ((fahrenheit - 32) * 5) / 9;
+}
+console.log(FahrenheitToCelsius(fahrenheit));
+
+//15. Check if a number is positive, negative, or zero.
+let $number = -3;
+
+if ($number > 0) {
+  console.log("positive");
+} else if ($number < 0) {
+  console.log("negative");
+} else {
+  console.log("zero");
+}
+
+//16. Write a program that prints the multiplication table of a given number up to 10.
+
+// Print the multiplication table for this number up to 10.
+//let number = 2
+function printMultiplicationTable(number: number) {
+  for (let i = 1; i <= 10; i++) {
+    let result = number * i;
+    console.log(number + " x " + i + " = " + result);
+  }
+}
+printMultiplicationTable(2);
