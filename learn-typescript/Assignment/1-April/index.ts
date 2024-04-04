@@ -158,7 +158,7 @@ console.log(isLeapYear(year));
 //14. Write a program that converts temperature from Fahrenheit to Celsius.
 let fahrenheit: number = 90;
 function FahrenheitToCelsius(fahrenheit: number): number {
-  return ((fahrenheit - 32) * 5) / 9;
+  return ((fahrenheit - 32) * 5) / 9; //using formula to convert temprature from F to C
 }
 console.log(FahrenheitToCelsius(fahrenheit));
 
@@ -178,6 +178,7 @@ if ($number > 0) {
 // Print the multiplication table for this number up to 10.
 //let number = 2
 function printMultiplicationTable(number: number) {
+  // using for loop
   for (let i = 1; i <= 10; i++) {
     let result = number * i;
     console.log(number + " x " + i + " = " + result);
