@@ -103,3 +103,17 @@ while (Guest.length > 2) {
 // • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
 Guest.splice(0, 2);
 console.log(Guest);
+// 18. Seeing the World: Think of at least five places in the world you’d like to visit.
+// • Store the locations in a array. Make sure the array is not in alphabetical order.
+// • Store the locations in a array. Make sure the array is not in alphabetical order.
+let Places = [
+    "Switzerland",
+    "Turkey",
+    "Egypt",
+    "Australia",
+    "Germany",
+];
+// • Print your array in its original order.
+console.log(Places);
+// • Print your array in alphabetical order without modifying the actual list.
+console.log(Places.sort());
