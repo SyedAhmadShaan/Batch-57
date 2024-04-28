@@ -143,4 +143,3 @@ console.log(Places);
 // • Print your array in alphabetical order without modifying the actual list.
 console.log(Places.sort());
 // • Show that your array is still in its original order by printing it.
-console.log(Places);
