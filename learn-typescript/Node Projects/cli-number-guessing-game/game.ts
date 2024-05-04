@@ -1,0 +1,23 @@
+#! /usr/bin/env node
+
+//1. Generate a random number
+let randomNo = Math.floor(Math.random() * 10);
+
+import inquirer from "inquirer";
+
+//2. Ask user to guess the number
+const answer = await inquirer.prompt([
+  {
+    message: "Enter a number between 1 to 10:",
+    name: "userInput",
+    type: "number",
+  },
+]);
+console.log(answer);
+
+//3. Check if the user guessed the number correctly or not
+if (randomNo === answer.userInput) {
+  console.log("You guessed the number correct ");
+} else {
+  console.log("You guessed the number wrong");
+}
