@@ -200,3 +200,193 @@ function findSmallestNumber(array) {
     return smallestNumber;
 }
 console.log(findSmallestNumber([1, 2, 3, 4, 5]));
+//21. Write a function calculateProduct that takes an array of numbers and returns the product of all elements.
+function calculateProduct(array) {
+    let product = 1; // initialize product to 1
+    for (let i = 0; i < array.length; i++) {
+        // loop through the array
+        product *= array[i]; // multiply product by each element
+    }
+    return product; // return the product
+}
+console.log(calculateProduct([1, 2, 3, 4, 5]));
+//22. Develop a function filterByLength that takes an array of strings and a number n.
+//The function should return an array containing only the strings that are longer than n characters.
+function filterByLength(array, n) {
+    let stringsLongerThanN = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].length > n) {
+            // check if the string is longer than n
+            stringsLongerThanN.push(array[i]); // push the string to the new array if it is longer than n
+        }
+    }
+    return stringsLongerThanN;
+}
+console.log(filterByLength(["apple", "banana", "grapes", "apricot", "guava", "avocado"], 5));
+//23. Create a function findDuplicates that finds and logs all duplicates in an array.
+function findDuplicates(array) {
+    let duplicates = [];
+    for (let i = 0; i < array.length; i++) {
+        for (let j = i + 1; j < array.length; j++) {
+            // loop through the array starting from the next element
+            if (array[i] === array[j] && !duplicates.includes(array[i])) {
+                // check if the duplicate is not already in the duplicates array
+                duplicates.push(array[i]); // push the duplicate to the duplicates array
+            }
+        }
+    }
+    return duplicates;
+}
+console.log(findDuplicates([1, 2, 3, 3, 5, 2, 2, 3, 4, 5]));
+//24. Write a function incrementAll that takes an array of integers and increments each element by one.
+function incrementAll(array) {
+    let newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        newArray.push(array[i] + 1); //Increment each element by one and push to newArray
+    }
+    return newArray;
+}
+console.log(incrementAll([2, 3, 4, 5, 6, 7]));
+//25. Develop a function countOccurrences that counts how many times a specific element appears in an array.
+function countOccurrences(array, element) {
+    let count = 0; // initialize count to 0
+    // loop through the array
+    for (let i = 0; i < array.length; i++) {
+        // check if the current element is equal to the element to count
+        if (array[i] === element) {
+            count++; // increment count if the element is found
+        }
+    }
+    return count;
+}
+console.log(countOccurrences([1, 2, 3, 3, 5, 2, 2, 3, 4, 5], 3));
+//26. Create a function isSorted that checks if an array is sorted in ascending order.
+function isSorted(array) {
+    for (let i = 0; i < array.length - 1; i++) {
+        if (array[i] > array[i + 1]) {
+            return false; // return false if the array is not sorted
+        }
+    }
+    return true; // return true if the array is sorted
+}
+console.log(isSorted([1, 2, 3, 4, 5]));
+console.log(isSorted([5, 4, 3, 2, 1]));
+//27. Write a function that receives an array of names and formats them into a string separated by commas,
+// except for the last two names, which should be separated by "and".
+function formatNames(names) {
+    let formattedNames = "";
+    // loop through the array except for the last two names
+    for (let i = 0; i < names.length - 2; i++) {
+        formattedNames += names[i] + ", "; // add the name to the formattedNames string with a comma and space
+    }
+    formattedNames += names[names.length - 2] + " and " + names[names.length - 1]; // add the last two names with "and"
+    return formattedNames;
+}
+console.log(formatNames(["John", "Rock", "Brock", "Undertaker"]));
+// 28. Develop a function that converts an array of Fahrenheit temperatures to Celsius and logs the new temperatures.
+function convertFahrenheitToCelsius(fahrenheitTemperatures) {
+    let celsiusTemperatures = [];
+    for (let i = 0; i < fahrenheitTemperatures.length; i++) {
+        let celsiusTemperature = (fahrenheitTemperatures[i] - 32) * (5 / 9);
+        celsiusTemperatures.push(celsiusTemperature);
+    }
+    return celsiusTemperatures;
+}
+console.log(convertFahrenheitToCelsius([32, 68, 86, 104]));
+// 29. Write a function minMaxAverage that takes an array of numbers
+//and returns an object with properties for the minimum, maximum, and average of those numbers.
+function minMAxAverage(array) {
+    let min = array[0];
+    let max = array[0];
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] < min) {
+            min = array[i];
+        }
+        if (array[i] > max) {
+            max = array[i];
+        }
+        sum += array[i];
+    }
+    let average = sum / array.length;
+    return { min, max, average };
+}
+console.log(minMAxAverage([1, 2, 3, 4, 5]));
+//30. Create a function swapElements that swaps two specified indices in an array.
+function swapElements(array, index1, index2) {
+    // swap two specified indices in an array
+    let temp = array[index1]; // swap two specified indices in an array
+    array[index1] = array[index2]; // swap two specified indices in an array
+    array[index2] = temp; // swap two specified indices in an array
+    return array; // swap two specified indices in an array
+}
+console.log(swapElements([1, 2, 3, 4, 5], 0, 4));
+/*31. Develop a function that takes two inputs, a string and a character, and returns the number of times
+the character appears in the string. */
+function countCharacter(string, character) {
+    let count = 0;
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] === character) {
+            count++; // increment count if the character is found
+        }
+    }
+    return count;
+}
+console.log(countCharacter("Hello", "l"));
+/* 32. Create a 'to-do list' array of objects where each object has properties task and completed (a boolean).
+Write a function to log only the tasks that are not yet completed.*/
+// create a 'to-do list' array of objects
+let toDoList = [
+    { task: "Do the assignment", completed: true },
+    { task: "Walk the dog", completed: false },
+    { task: "Feed the cat", completed: true },
+    { task: "Water the plants", completed: false },
+];
+// write a function to log only the tasks that are not yet completed
+function logNotCompletedTasks(toDoList) {
+    for (let i = 0; i < toDoList.length; i++) {
+        if (!toDoList[i].completed) {
+            console.log(toDoList[i].task);
+        }
+    }
+}
+// 33. Write a function that takes an array of integers and sorts them from smallest to largest.
+function sortArray(array) {
+    array.sort((a, b) => a - b); // sort the array in ascending order
+    return array; // return the sorted array
+}
+console.log(sortArray([5, 2, 8, 3, 1]));
+// 34. Develop a TypeScript program that logs every element of an array in reverse order without using the .reverse() method.
+function logArrayInReverse(array) {
+    for (let i = array.length - 1; i >= 0; i--) {
+        console.log(array[i]); // log each element in reverse order
+    }
+}
+logArrayInReverse([1, 2, 3, 4, 5]);
+//35. Write a script that simulates a basic calculator. It should take two operands and an operator ('+', '-', '*', '/') from the user,
+//perform the operation, and log the result.
+function calculate(operand1, operand2, operator) {
+    let result = 0; // initialize result to 0
+    switch (operator // switch case to perform the operation based on the operator
+    ) {
+        case "+":
+            result = operand1 + operand2; // add the two operands
+            break;
+        case "-":
+            result = operand1 - operand2; // subtract the two operands
+            break;
+        case "*":
+            result = operand1 * operand2; // multiply the two operands
+            break;
+        case "/":
+            result = operand1 / operand2; // Divide the two operands
+            break;
+        default:
+            console.log("Invalid operator"); // log error message if the operator is invalid
+    }
+    console.log(result);
+}
+calculate(10, 5, "+");
+calculate(10, 5, "-");
+calculate(10, 5, "*");
+calculate(10, 5, "/");
