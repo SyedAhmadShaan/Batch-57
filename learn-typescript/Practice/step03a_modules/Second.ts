@@ -1,6 +1,6 @@
 const abc = "abc";
 
-const array9 = [1, 2, 3];
+const array9 = [1, 2, 3, 4];
 
 const obj = {
   name: "Ahmad",
