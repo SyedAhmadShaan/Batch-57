@@ -113,20 +113,3 @@ function conveyence(ride: string) {
   }
 }
 console.log(conveyence("cycle"));
-
-/*let age3 = 32;
-age3 = age3 + 1;
-console.log(Age3);*/
-
-let name9;
-let age9;
-{
-  let height;
-  // 2
-} // 2
-{
-  let weight; // 1 	// 2
-  console.log(weight); // 1 	// 2
-  // 2
-  console.log(weight); // 2
-}
