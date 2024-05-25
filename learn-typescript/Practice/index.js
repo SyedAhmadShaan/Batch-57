@@ -1,5 +1,6 @@
 "use strict";
 //Reverse an Array Write a function that takes an array as input and returns a new array with the elements in reverse order.
+Object.defineProperty(exports, "__esModule", { value: true });
 let Sales = [20, 30, 40, 50, 60, 70];
 function reverse(array) {
     let newArray = [];

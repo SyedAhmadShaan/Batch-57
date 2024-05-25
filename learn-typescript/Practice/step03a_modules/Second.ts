@@ -10,4 +10,4 @@ function sum() {
   console.log("this is sum function");
 }
 
-export { abc, array9, obj, sum };
+export { abc, array9, obj, sum }; //export
