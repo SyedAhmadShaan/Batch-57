@@ -1,4 +1,4 @@
-import a from "./first";
+import a from "./first"; //import
 
 console.log("a", a);
 
