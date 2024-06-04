@@ -133,4 +133,238 @@ console.log("Alphabetically sorted:", Places.sort());
 console.log("Reverse alphabetically sorted:", Places.sort((a, b) => b.localeCompare(a)));
 //19. Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
 console.log(`I am inviting ${Guest.length} people to dinner`);
-//20.
+//20. Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+let languages = [
+    "Punjabi",
+    "Spanish",
+    "English",
+    "Persian",
+    "French",
+];
+function listOfLanguages(languages) {
+    for (let i = 0; i < languages.length; i++) {
+        console.log(languages[i]);
+    }
+}
+listOfLanguages(languages);
+// 21. They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+let country = {
+    name: "Pakistan",
+    capital: "Islamabad",
+    language: "Urdu",
+};
+function countryDetails(country) {
+    console.log(`${country.name} is my country`);
+}
+countryDetails(country);
+/* 22. Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen.
+Change an index in one of your programs to produce an index error.
+Make sure you correct the error before closing the program. */
+let fruit = [
+    "apple",
+    "banana",
+    "graprs",
+    "water melon",
+    "strawberry",
+];
+console.log(fruit[6]); // No index 6 in array
+// Corrected
+if (fruit.length > 4) {
+    console.log(fruit[4]);
+}
+/*Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
+
+let car = 'subaru';
+
+console.log("Is car == 'subaru'? I predict True.")
+
+console.log(car == 'subaru')
+
+• Look closely at your results, and make sure you understand why each line evaluates to True or False.
+
+• Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.*/
+let book = "ai essentials";
+console.log("Is book == 'ai essentials'? I predict True.");
+console.log(book == "ai essentials");
+let bike = "suzuki";
+console.log("Is bike == suzuki? I predict True.");
+console.log(bike == "suzuki");
+let age = "18";
+console.log("Is age == 18? I predict True.");
+console.log(age == "18");
+let user = "admin";
+console.log("Is user == admin? I predict True");
+console.log(user == "admin");
+let person = "student";
+console.log("Is person == student? I predict True");
+console.log(person == "student");
+let book1 = "ai essentials";
+console.log("Is book1 != 'ai essentials'? I predict False.");
+console.log(book1 != "ai essentials");
+let bike1 = "suzuki";
+console.log("Is bike1 != suzuki? I predict False.");
+console.log(bike1 != "suzuki");
+let age1 = "18";
+console.log("Is age1 != 18? I predict False.");
+console.log(age1 != "18");
+let user1 = "admin";
+console.log("Is user1 != admin? I predict False");
+console.log(user1 != "admin");
+let person1 = "student";
+console.log("Is person1 != student? I predict False");
+console.log(person1 != "student");
+// 25. Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
+let alien_color = "green";
+//• Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
+if (alien_color == "green") {
+    console.log("The player just earned 5 points");
+}
+// • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
+let alien_color_ = "yellow";
+if (alien_color_ == "yellow") {
+    console.log("The player just earned 5 points");
+}
+let alien_color1 = "yellow";
+if (alien_color1 == "green") {
+    console.log("The player just earned 5 points."); // no output
+}
+/*26. Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
+• If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
+• If the alien’s color isn’t green, print a statement that the player just earned 10 points. */
+let alien_color2 = "green";
+if (alien_color2 == "green") {
+    console.log("The player just earned 5 points for shooting the alien");
+}
+else {
+    console.log("The player just earned 10 points");
+}
+//• Write one version of this program that runs the if block and another that runs the else block.
+let personAge = "13";
+if (personAge >= "13") {
+    console.log("The person is allowed to play the aliens shooter game.");
+}
+else {
+    console.log("The person is not allowed to play the aliens shooter game");
+}
+/*27. Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
+• If the alien is green, print a message that the player earned 5 points.
+• If the alien is yellow, print a message that the player earned 10 points.
+• If the alien is red, print a message that the player earned 15 points.
+• Write three versions of this program, making sure each message is printed for the appropriate color alien.*/
+let alien_color3 = "green";
+if (alien_color3 == "green") {
+    console.log("The player earned 5 points.");
+}
+else if (alien_color3 == "yellow") {
+    console.log("The player earned 10 points.");
+}
+else if (alien_color3 == "red") {
+    console.log("The player earned 15 points.");
+}
+let alien_color4 = "yellow";
+if (alien_color4 == "yellow") {
+    console.log("The player earned 10 points.");
+}
+else if (alien_color4 == "green") {
+    console.log("The player earned 5 points.");
+}
+else if (alien_color4 == "red") {
+    console.log("The player earned 15 points.");
+}
+let alien_color5 = "red";
+if (alien_color5 == "red") {
+    console.log("The player earned 15 points.");
+}
+else if (alien_color5 == "green") {
+    console.log("The player earned 5 points.");
+}
+else if (alien_color5 == "yellow") {
+    console.log("The player earned 10 points.");
+}
+/* 28. Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
+• If the person is less than 2 years old, print a message that the C.
+• If the person is at least 2 years old but less than 4, print a message that the person is a toddler.
+• If the person is at least 4 years old but less than 13, print a message that the person is a kid.
+• If the person is at least 13 years old but less than 20, print a message that the person is a teenager.
+• If the person is at least 20 years old but less than 65, print a message that the person is an adult.
+• If the person is age 65 or older, print a message that the person is an elder. */
+let person_age = 32;
+if (person_age <= 2) {
+    console.log("Person is a baby.");
+}
+else if (person_age >= 2 && person_age <= 4) {
+    console.log("Person is a toddler.");
+}
+else if (person_age >= 4 && person_age <= 13) {
+    console.log("Person is a kid.");
+}
+else if (person_age >= 13 && person_age <= 20) {
+    console.log("Person is a teenager.");
+}
+else if (person_age >= 20 && person_age <= 65) {
+    console.log("Person is an adult.");
+}
+else if (person_age >= 65) {
+    console.log("Person is an elder.");
+}
+/* 29. Favorite Fruit: Make a array of your favorite fruits,
+and then write a series of independent if statements that check for certain fruits in your array.
+• Make a array of your three favorite fruits and call it favorite_fruits.
+
+• Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array,
+the if block should print a statement, such as You really like bananas!*/
+let favoriteFruits = ["apple", "banana", "mango"];
+for (let i = 0; i < favoriteFruits.length; i++)
+    if (favoriteFruits[i] === "mango") {
+        console.log("I really like mangoes"); //using for loop
+    }
+for (let i = 0; i < favoriteFruits.length; i++)
+    if (favoriteFruits[i] === "banana") {
+        console.log("I really like bananas");
+    }
+if (favoriteFruits.includes("strawberry")) {
+    console.log("I really like strawberries"); // using include method
+}
+if (favoriteFruits.includes("apple")) {
+    console.log("I really like apples");
+}
+if (favoriteFruits.includes("grapes")) {
+    console.log("I really like grapes");
+}
+/* 30. Hello Admin: Make a array of five or more usernames, including the name 'admin'.
+Imagine you are writing code that will print a greeting to each user after they log in to a website.
+Loop through the array, and print a greeting to each user:
+• If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
+• Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.*/
+let users = ["Ahmad", "Ali", "Admin", "Asad", "Junaid"];
+for (let i = 0; i < users.length; i++)
+    if (users[i] === "Admin") {
+        console.log("Hello admin, would you like to see a status report?");
+    }
+    else if (users[i] === "Ahmad") {
+        console.log("Hello Ahmad, thank you for logging in again");
+    }
+    else if (users[i] === "Ali") {
+        console.log("Hello Ali, thank you for logging in again.");
+    }
+    else if (users[i] === "Asad") {
+        console.log("Hello Asad, thank you for logging in again.");
+    }
+    else if (users[i] === "Junaid") {
+        console.log("Hello Junaid, thank you for logging in again.");
+    }
+/* 31. No Users: Add an if test to Exercise 30 to make sure the list of users is not empty.
+• If the list is empty, print the message We need to find some users!
+• Remove all of the usernames from your array, and make sure the correct message is printed.*/
+if (users.length == 0) {
+    console.log("We need to find some users!");
+}
+users.pop();
+users.pop();
+users.pop();
+users.pop();
+users.pop();
+console.log(users);
+if (users.length == 0) {
+    console.log("We need to find some users!");
+}
