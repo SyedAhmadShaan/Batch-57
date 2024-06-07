@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 //1. Install Node.js, TypeScript and VS Code on your computer.
-//2. Personal Message: Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, “Hello Eric, would you like to learn some Python today?”
+/*2. Personal Message: Store a person’s name in a variable, and print a message to that person.
+Your message should be simple, such as, “Hello Eric, would you like to learn some Python today?”*/
 let name1 = "Eric";
 let greet = `Hello ${name1}, would you like to learn some Python today?`;
 console.log(greet);
@@ -10,58 +11,74 @@ let personName = "Eric";
 console.log(personName.toLowerCase());
 console.log(personName.toUpperCase());
 console.log(personName.charAt(0).toUpperCase() + personName.slice(1).toLowerCase());
-//4.Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the following, including the quotation marks: Albert Einstein once said, “A person who never made a mistake never tried anything new.”
+/*4.Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author.
+Your output should look something like the following, including the quotation marks: Albert Einstein once said,
+“A person who never made a mistake never tried anything new.”*/
 let Author = "Alber Einstein";
 let quote = `${Author} once said, “A person who never made a mistake never tried anything new.”`;
 console.log(quote);
-//5. Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
+/*5. Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person.
+Then compose your message and store it in a new variable called message. Print your message.*/
 let famous_person = "Alber Einstein";
 let message = `${famous_person} once said, “A person who never made a mistake never tried anything new.”`;
 console.log(message);
-//6. Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
+/*6. Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name.
+Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around
+the name is displayed. Then print the name after striping the white spaces.*/
 let personNameWithWhitespace = " \t Ahmad Shaan \n ";
-console.log(personNameWithWhitespace); //print the name with white spaces
-console.log(personNameWithWhitespace.trim()); //strip white spaces using trim() method
-//7. Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print statements to see the results.
+console.log(personNameWithWhitespace);
+console.log(personNameWithWhitespace.trim());
+/*7. Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8.
+Be sure to enclose your operations in print statements to see the results.*/
 console.log(4 + 4);
 console.log(12 - 4);
 console.log(2 * 4);
 console.log(16 / 2);
-//8. You should create four lines that look like this:console.log(5 + 3) Your output should simply be four lines with the number 8 appearing once on each line.
+/*8. You should create four lines that look like this:console.log(5 + 3) Your output should simply be four lines with
+the number 8 appearing once on each line.*/
 console.log(5 + 3);
 console.log(5 + 3);
 console.log(5 + 3);
 console.log(5 + 3);
-//9. Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
+/*9. Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your
+favorite number. Print that message.*/
 let favoriteNumber = 7;
 console.log(`My favorite number is ${favoriteNumber}`);
-//10. Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence describing what the program does.
+/*10. Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have
+anything specific to write because your programs are too simple at this point, just add your name and the current date at the top
+of each program file. Then write one sentence describing what the program does.*/
 let personName1 = " \t Ahmad Shaan \n ";
 console.log(personName1); //print the name with white spaces
 console.log(personName1.trim()); //strip white spaces using trim() method
-//11. Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
+/*11. Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each
+element in the list, one at a time.*/
 let names = ["Sultan", "Mazhar", "Saqib", "Kamran"];
 console.log(names[0]);
 console.log(names[1]);
 console.log(names[2]);
 console.log(names[3]);
-//12. Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
+/*12. Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name,
+print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.*/
 console.log(`Hello ${names[0]}, lets learn Typescript`);
 console.log(`Hello ${names[2]}, lets learn Typescript`);
 console.log(`Hello ${names[1]}, lets learn Typescript`);
 console.log(`Hello ${names[3]}, lets learn Typescript`);
-// 13. Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
+/* 13. Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car,
+and make a list that stores several examples. Use your list to print a series of statements about these items,
+such as “I would like to own a Honda motorcycle.”*/
 let transport = ["Honda CG125", "Suzuki GS150", "Yamaha YBR125"];
 console.log(`I would like to own ${transport[2]}`);
-// 14. Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
+/*14. Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite?
+Make a list that includes at least three people you’d like to invite to dinner.
+Then use your list to print a message to each person, inviting them to dinner.*/
 let Guest = ["Ali", "Nauman", "Waqas"];
 console.log(`${Guest[0]}, Please join us for dinner this weekend`);
 console.log(`${Guest[1]}, Please join us for dinner this weekend`);
 console.log(`${Guest[2]}, Please join us for dinner this weekend`);
 // 15. Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
 // • Start with your program from Exercise 14. Add a print statement at the end of your program stating the name of the guest who can’t make it.
+// • Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
 console.log(`${Guest[2]}, may find difficult to join us for dinner`);
-// Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
 Guest.pop();
 console.log(Guest);
 Guest.push("Imran");
@@ -452,3 +469,137 @@ function make_shirt(size, text) {
 make_shirt("Medium", "Never Give Up");
 make_shirt("Large", "Pakistan Zindabad");
 make_shirt("Extra Large", "Code like a pro");
+/* Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript.
+Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message. */
+function Make_shirt(size = "large", message = "I love typescript") {
+    console.log(`The shirt size is ${size} and the message printed on it is ${message}`);
+}
+Make_shirt("large");
+Make_shirt("medium");
+Make_shirt("small", "code like a pro");
+/*38. Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print
+a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value.
+Call your function for three different cities, at least one of which is not in the default country. */
+function describe_city(city = "Karachi", country = "Pakistan") {
+    console.log(`${city} is in ${country}`);
+}
+describe_city("karach");
+describe_city("Lahore");
+describe_city("Paris", "France");
+/* City Names: Write a function called city_country() that takes in the name of a city and its country.
+The function should return a string formatted like this:
+"Lahore, Pakistan"
+Call your function with at least three city-country pairs, and print the value that’s returned. */
+function city_country(city, country) {
+    console.log(`${city}, ${country}`);
+}
+city_country("Lahore", "Pakistan");
+city_country("Paris", "France");
+city_country("Beijing", "China");
+/* 40. Album: Write a function called make_album() that builds a Object describing a music album. The function should take in
+an artist name and an album title, and it should return a Object containing these two pieces of information.
+Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are
+storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks
+on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object.
+Make at least one new function call that includes the number of tracks on an album. */
+function make_album(artist, title) {
+    return {
+        artist: artist,
+        title: title,
+    };
+}
+let album1 = make_album("Atif Aslam", "Dooriee");
+let album2 = make_album("Bruno Mars", "24K Magic");
+let album3 = make_album("Ed Sheeran", "x");
+console.log(album1);
+console.log(album2);
+console.log(album3);
+function Make_Album(artist, title, tracks) {
+    let album = {
+        artist: artist,
+        title: title,
+    };
+    if (tracks) {
+        album.tracks = tracks;
+    }
+    return album;
+}
+let album4 = Make_Album("Adele", "Hello", 5);
+let album5 = Make_Album("Coldplay", "Parachutes", 10);
+let album6 = Make_Album("Justin Bieber", "Yummy", 6);
+console.log(album4);
+console.log(album5);
+console.log(album6);
+/* Magicians: Make a array of magician’s names.
+Pass the array to a function called show_magicians(), which prints the name of each magician in the array. */
+let magicians = ["John", "Eric", "Jake", "Donald"];
+function show_magicians(magicians) {
+    for (let i = 0; i < magicians.length; i++) {
+        console.log(magicians[i]);
+    }
+}
+show_magicians(magicians);
+/*42. Great Magicians: Start with a copy of your program from Exercise 39.
+Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name.
+Call show_magicians() to see that the list has actually been modified.*/
+function make_great(magicians) {
+    let great_magicians = [];
+    for (let i = 0; i < magicians.length; i++) {
+        great_magicians.push("the Great " + magicians[i]);
+    }
+    return great_magicians;
+}
+make_great(magicians);
+/* 43. Unchanged Magicians: Start with your work from Exercise 40. Call the function make_great() with a copy of the array of
+magicians’ names. Because the original array will be unchanged, return the new array and store it in a separate array.
+Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added
+to each magician’s name. */
+let great_magicians = make_great([...magicians]);
+console.log("Original magicians:");
+show_magicians(magicians);
+console.log("\nGreat magicians:");
+show_magicians(great_magicians);
+/* 44. Sandwiches: Write a function that accepts a array of items a person wants on a sandwich.
+The function should have one parameter that collects as many items as the function call provides,
+and it should print a summary of the sandwich that is being ordered. Call the function three times,
+using a different number of arguments each time.*/
+let items = [
+    "Cheese Slice",
+    "Chicken Pattie",
+    "Beef Pattie",
+    "Mayonnaise",
+    "Ketchup",
+];
+function make_sndwich(...items) {
+    console.log("Making a sandwich with items below:");
+    for (let i = 0; i < items.length; i++) {
+        console.log(`- ${items[i]}`);
+    }
+    console.log("Your sandwich is ready :^)");
+}
+make_sndwich("Cheese Slice", "Chicken Pattie", "Tomato");
+make_sndwich("Beef Pattie", "Mayonnaise", "BBQ Sauce");
+make_sndwich("Peanut Butter", "Nutella", "Jelly");
+/* 45. Cars: Write a function that stores information about a car in a Object. The function should always receive
+a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments.
+Call the function with the required information and two other name-value pairs,
+such as a color or an optional feature. Print the Object that’s returned to make sure all the information was stored correctly.*/
+function car_features(manufacturer, model, color, engine) {
+    let car = {
+        manufacturer: manufacturer,
+        model: model,
+    };
+    if (color !== undefined) {
+        car.color = color;
+    }
+    if (engine !== undefined) {
+        car.engine = engine;
+    }
+    return car;
+}
+let car1 = car_features("Toyota Corolla", 2024);
+let car2 = car_features("Suzuki Alto", 2019, "White", 660);
+let car3 = car_features("Honda Civic", 2023, "Black");
+console.log(car1);
+console.log(car2);
+console.log(car3);
