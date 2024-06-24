@@ -1,0 +1,27 @@
+{
+  "name": "cli-interactive-todo-list",
+  "version": "1.0.1",
+  "description": "An interactive command-line interface for managing your to-do list. Add, mark, and remove tasks easily using the inquirer.",
+  "main": "index.js",
+  "type": "module",
+  "bin": "dist/index.js",
+  "keywords": [
+    "CLI",
+    "to-do",
+    "task-manager",
+    "interactive",
+    "inquirer"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Syed Ahmad Shaan",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.16"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.14.2"
+  }
+}
