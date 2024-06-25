@@ -1,0 +1,26 @@
+{
+  "name": "ts-multi-currency-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": "dist/index.js",
+  "keywords": [
+    "CLI",
+    "currency converter",
+    "inquirer",
+    "nodejs"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Syed Ahmad Shaan",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.16"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.14.8"
+  }
+}
