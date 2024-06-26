@@ -1,0 +1,21 @@
+{
+  "name": "word-counter-tool-cli",
+  "version": "1.0.0",
+  "description": "A simple TypeScript console application to count the length of entered text in characters",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {"@ahmadth3gr3at/word-counter":"dist/index.js"},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["typescript",
+  "cli",
+  "word-counter",
+  "text-length"],
+  "author": "Syed Ahmad Shaan",
+  "license": "MIT",
+  "dependencies": {
+    "@types/inquirer": "^9.0.7",
+    "inquirer": "^9.2.23"
+  }
+}
