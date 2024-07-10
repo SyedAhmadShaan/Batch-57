@@ -1,3 +1,9 @@
+## Project Link
+
+Check out the deployed project [here](https://hello-world-01-tau.vercel.app/).
+
+## About
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
