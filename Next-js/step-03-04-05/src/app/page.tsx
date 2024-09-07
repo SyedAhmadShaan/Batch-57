@@ -4,6 +4,7 @@ import Button from "@/components/Button";
 import colors from "tailwindcss/colors";
 import Alert from "@/components/Alert";
 import { useState } from "react";
+import LikeButton from "./LikeButton/page";
 
 export default function Home() {
   const [alertVisible, setAlertVisibility] = useState(false);
@@ -19,6 +20,11 @@ export default function Home() {
       >
         My Button
       </Button>
+      <LikeButton
+        onClick={() => {
+          console.log("Liked");
+        }}
+      />
     </div>
   );
 }
